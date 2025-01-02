@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextPong FAQ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>NextPong Support</h1>
-    <p>If you have any questions or need help, feel free to contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:mm.app.dev2024@gmail.com">mm.app.dev2024@gmail.com</a></p>
+  <header>
+    <h1>NextPong Support Page</h1>
+  </header>
+  
+  <main>
+    <article>
+      <p>
+        NextPong reimagines the classic arcade game with fresh mechanics and smooth gameplay.<br>
+        Perfect your skills and enjoy endless fun in this modern twist on a classic!
+      </p>
+      <p>
+        We hope you enjoy our game as much as we enjoyed making it for you.
+      </p>
+    </article>
+    <article>
+      <p>If you have any questions or need help, feel free to contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:mm.app.dev2024@gmail.com">mm.app.dev2024@gmail.com</a></p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; {{ actual year }} Marko Mijacevic
+  </footer>
+  <script>
+    const yearSpan = document.querySelector('footer');
+    yearSpan.innerHTML = `&copy; ${new Date().getFullYear()} Marko Mijacevic`;
+  </script>
 </body>
 </html>
